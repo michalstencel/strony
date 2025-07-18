@@ -2680,6 +2680,27 @@ figcaption {
   color: var(--text-color--text-alt);
 }
 
+.contact_heading-text {
+  width: 100%;
+  max-width: 32rem;
+}
+
+.contact_heading-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.faq_banner-text {
+  color: var(--text-color--text-primary);
+  width: 100%;
+  max-width: 48rem;
+  font-family: Geist, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 2.5rem;
@@ -3246,6 +3267,18 @@ figcaption {
   .pricing_card-description {
     text-align: center;
   }
+
+  .contact_heading-text {
+    font-size: .825rem;
+  }
+
+  .contact_heading-title {
+    font-size: 2.5rem;
+  }
+
+  .faq_banner-text {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -3623,6 +3656,10 @@ figcaption {
   .subfooter-text, .subfooter-text.is-time {
     text-align: center;
   }
+
+  .contact_heading-title {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3636,7 +3673,7 @@ figcaption {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .margin-horizontal {
@@ -3754,6 +3791,8 @@ figcaption {
   }
 
   .hero_grid {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
     flex-flow: column-reverse;
   }
 
@@ -3795,6 +3834,11 @@ figcaption {
     width: 100%;
   }
 
+  .features_stack {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
   .about_grid-col._2-col {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -3831,12 +3875,13 @@ figcaption {
   .contact_heading {
     text-align: left;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .about_wrapper {
     justify-content: flex-start;
     align-items: flex-start;
+    padding-top: 0;
   }
 
   .pricing_toggle {
@@ -3875,7 +3920,7 @@ figcaption {
   }
 
   .faq_component {
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
   }
 
@@ -3885,6 +3930,7 @@ figcaption {
 
   .faq_item-description {
     max-width: 100%;
+    font-size: .75rem;
   }
 
   .faq-item-header {
@@ -3983,6 +4029,10 @@ figcaption {
     display: flex;
   }
 
+  .faq_item-title {
+    font-size: 1rem;
+  }
+
   .section_subfooter {
     height: auto;
     position: absolute;
@@ -4011,6 +4061,20 @@ figcaption {
 
   .pricing_card-description.is-dark {
     line-height: 1.25rem;
+  }
+
+  .contact_heading-text {
+    text-align: center;
+    font-size: .825rem;
+  }
+
+  .contact_heading-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .faq_banner-text {
+    text-align: center;
   }
 }
 
