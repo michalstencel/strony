@@ -2626,7 +2626,7 @@ figcaption {
   transition: transform .5s;
   display: flex;
   position: fixed;
-  inset: auto 1.5% 1.5% auto;
+  inset: auto 1% 1.5% auto;
 }
 
 .contact-form-btn:hover {
