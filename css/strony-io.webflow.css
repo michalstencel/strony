@@ -13,24 +13,25 @@
   --background-color--background-error\<deleted\|variable-89aecd3e-2fe8-312c-65a2-e3e7c57d326c\>: var(--base-color-system--error);
   --text-color--text-error\<deleted\|variable-4a51c5d2-820c-a0d9-b49e-0e5d273c964f\>: var(--base-color-system--error-red-dark\<deleted\|variable-f7a8b234-8033-a5d6-4d85-0326277c2bf8\>);
   --background-color--bg-btn: var(--base-color-brand--lemon);
-  --background-color--bg-btn-hover: var(--base-color-brand--lemon-light);
+  --background-color--bg-btn-hover: var(--base-color-brand--lemon-dark);
   --base-color-neutral--neutral-lighter: #fafafa;
   --base-color-neutral--white: #fff;
   --background-color--background-warning\<deleted\|variable-0aa1a7ce-e851-b6b5-66db-1a1a96e8e04b\>: var(--base-color-system--warning);
   --text-color--text-warning\<deleted\|variable-825aa1d8-b093-0b89-37c5-87d980df10f5\>: var(--base-color-system--warning-yellow-dark\<deleted\|variable-296491a7-483e-1229-36b5-e13808cc9004\>);
-  --text-color--text-primary-hover: var(--base-color-neutral--neutral);
+  --link-color--link-hover: var(--base-color-brand--violet-dark);
   --base-color-neutral--black: #000;
-  --base-color-brand--violet-dark: #491c96;
   --background-color--bg-alt-hover: var(--base-color-neutral--black-light);
   --base-color-neutral--neutral-light: #eee;
   --base-color-brand--violet: #6927da;
   --base-color-brand--lemon: #cf0;
-  --base-color-brand--lemon-light: #e6ff4d;
+  --base-color-brand--lemon-dark: #beee00;
   --background-color--bg-btn-wizytowki: var(--base-color-brand--blue);
   --background-color--bg-btn-wizytowki-hover: var(--base-color-brand--blue-dark);
   --background-color--bg-btn-brandingi: var(--base-color-brand--orange);
   --background-color--bg-btn-brandingi-hover: var(--base-color-brand--orange-dark);
   --base-color-brand--violet-light: #e3e8fc;
+  --text-color--text-primary-hover: var(--base-color-neutral--neutral);
+  --base-color-brand--violet-dark: #491c96;
   --base-color-brand--blue: #007aff;
   --base-color-brand--blue-dark: #0063cc;
   --base-color-brand--orange: #ff4405;
@@ -1060,13 +1061,14 @@ figcaption {
   align-items: center;
   padding: 1rem 2rem 1rem 2.5rem;
   text-decoration: none;
-  transition: background-color .5s;
+  transition: background-color .5s, box-shadow .5s;
   display: flex;
   box-shadow: inset 0 -1px #00000040, inset 0 1px #fff;
 }
 
 .button:hover {
   background-color: var(--background-color--bg-btn-hover);
+  box-shadow: inset 0 1px #00000040, inset 0 -1px #fff;
 }
 
 .button.is-text {
@@ -1283,7 +1285,7 @@ figcaption {
 }
 
 .nav_menu_link:hover {
-  color: var(--text-color--text-primary-hover);
+  color: var(--link-color--link-hover);
 }
 
 .nav_button {
@@ -1666,10 +1668,6 @@ figcaption {
   display: flex;
 }
 
-.features_link-block:hover {
-  color: var(--text-color--text-primary-hover);
-}
-
 .icon-features-arrow {
   justify-content: center;
   align-items: center;
@@ -1929,7 +1927,7 @@ figcaption {
 }
 
 .pricing_tab-link:hover {
-  color: var(--base-color-brand--violet-dark);
+  color: var(--link-color--link-hover);
 }
 
 .pricing_tab-link.w--current {
@@ -2150,7 +2148,12 @@ figcaption {
 }
 
 .contact_form-component {
-  width: 70%;
+  width: 100%;
+}
+
+.contact_form {
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio_card-description {
@@ -2310,7 +2313,7 @@ figcaption {
 }
 
 .footer_nav-link:hover {
-  color: var(--text-color--text-primary-hover);
+  color: var(--link-color--link-hover);
 }
 
 .footer_left {
@@ -2413,7 +2416,7 @@ figcaption {
 }
 
 .footer-email:hover {
-  color: var(--base-color-brand--lemon-light);
+  color: var(--base-color-brand--lemon-dark);
 }
 
 .nav-logo-dark {
@@ -2509,7 +2512,7 @@ figcaption {
 
 .button-faq.wizytowki {
   background-color: var(--background-color--bg-btn-wizytowki);
-  transition-property: none;
+  transition: background-color .5s;
 }
 
 .button-faq.wizytowki:hover {
@@ -2642,8 +2645,7 @@ figcaption {
 .copy-email-button {
   grid-column-gap: .625rem;
   grid-row-gap: .625rem;
-  background-color: var(--background-color--bg-secondary);
-  box-shadow: inset 0 1px 0 1px #00000040, inset 0 -1px 0 1px var(--base-color-neutral--white);
+  box-shadow: inset 0 -1px 0 0 #00000040, inset 0 -1px 0 0 var(--base-color-neutral--white);
   color: var(--text-color--text-primary);
   text-align: center;
   border-radius: .75rem;
@@ -2651,12 +2653,13 @@ figcaption {
   align-items: center;
   padding: 1rem 2rem 1rem 2.5rem;
   text-decoration: none;
-  transition: background-color .5s;
+  transition: box-shadow .5s, background-color .5s;
   display: flex;
 }
 
 .copy-email-button:hover {
-  background-color: var(--background-color--bg-primary);
+  background-color: var(--background-color--bg-secondary);
+  box-shadow: inset 0 1px 0 0 #00000040, inset 0 1px 0 0 var(--base-color-neutral--white);
 }
 
 .copy-icon {
