@@ -29,8 +29,8 @@
   --background-color--bg-btn-wizytowki-hover: var(--base-color-brand--blue-dark);
   --background-color--bg-btn-brandingi: var(--base-color-brand--orange);
   --background-color--bg-btn-brandingi-hover: var(--base-color-brand--orange-dark);
-  --base-color-brand--violet-light: #e3e8fc;
   --text-color--text-primary-hover: var(--base-color-neutral--neutral);
+  --base-color-brand--violet-light: #e3e8fc;
   --base-color-brand--violet-dark: #491c96;
   --base-color-brand--blue: #007aff;
   --base-color-brand--blue-dark: #0063cc;
@@ -2533,11 +2533,11 @@ figcaption {
 }
 
 .text-span {
-  color: var(--base-color-brand--violet-light);
+  color: var(--text-color--text-primary-hover);
 }
 
 .footer_title {
-  color: var(--text-color--text-secondary);
+  color: var(--text-color--text-primary-hover);
   font-family: Geist, sans-serif;
   font-size: 1.125rem;
 }
@@ -2939,7 +2939,7 @@ figcaption {
     justify-content: flex-start;
     align-items: center;
     max-width: 80%;
-    padding-top: 5rem;
+    padding-top: 0;
     padding-bottom: 5rem;
     padding-right: 0;
   }
@@ -2951,7 +2951,7 @@ figcaption {
     border-top-style: none;
     border-bottom-style: none;
     border-radius: 2px;
-    flex-flow: column;
+    flex-flow: column-reverse;
     grid-template-columns: 1fr;
   }
 
@@ -3083,6 +3083,10 @@ figcaption {
     align-items: center;
     max-width: 80%;
     font-size: .875rem;
+  }
+
+  .hero_image-wrapper {
+    border-left-style: none;
   }
 
   .about_grid-cta {
@@ -3278,6 +3282,10 @@ figcaption {
 
   .faq_banner-text {
     text-align: center;
+  }
+
+  .contact_heading-description {
+    font-size: .825rem;
   }
 }
 
@@ -3542,6 +3550,8 @@ figcaption {
   }
 
   .contact_heading {
+    justify-content: flex-start;
+    align-items: center;
     max-width: 100%;
   }
 
@@ -3660,6 +3670,10 @@ figcaption {
   .contact_heading-title {
     font-size: 2.5rem;
   }
+
+  .contact_heading-description {
+    max-width: 80%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3770,7 +3784,7 @@ figcaption {
     max-width: 100%;
   }
 
-  .button.w--current, .button.is-secondary {
+  .button, .button.w--current, .button.is-secondary {
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -3801,8 +3815,8 @@ figcaption {
   }
 
   .portfolio_slide-bottom {
-    padding-top: .25rem;
-    padding-bottom: .25rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
   }
 
   .features_rive {
@@ -3869,7 +3883,7 @@ figcaption {
 
   .about_grid-cta {
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .contact_heading {
@@ -3888,11 +3902,16 @@ figcaption {
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
     background-color: var(--background-color--bg-primary);
+    border-radius: 0;
     flex-flow: column;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
   }
 
   .pricing_tab-link {
-    width: 50%;
+    border-radius: 2rem;
   }
 
   .pricing_card-header-top {
@@ -3914,9 +3933,23 @@ figcaption {
     align-items: flex-start;
   }
 
+  .pricing_card-feature {
+    padding-bottom: .25rem;
+  }
+
+  .icon-check-circle {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .portfolio_card-description {
+    font-size: .75rem;
+  }
+
   .pricing_card-addons {
     width: 100%;
     font-size: .75rem;
+    line-height: 1.25;
   }
 
   .faq_component {
@@ -3970,8 +4003,8 @@ figcaption {
   .faq_banner {
     background-color: #0000;
     padding-bottom: 2rem;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .section_footer {
@@ -4033,10 +4066,18 @@ figcaption {
     font-size: 1rem;
   }
 
+  .button-faq.wizytowki, .button-faq.brandingi {
+    width: 100%;
+  }
+
   .section_subfooter {
     height: auto;
     position: absolute;
     top: 10984.9px;
+  }
+
+  .portfolio_card-title {
+    font-size: .875rem;
   }
 
   .copy-email-button {
@@ -4075,6 +4116,11 @@ figcaption {
 
   .faq_banner-text {
     text-align: center;
+  }
+
+  .contact_heading-description {
+    text-align: center;
+    font-size: .825rem;
   }
 }
 
