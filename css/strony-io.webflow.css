@@ -3794,6 +3794,10 @@ figcaption {
     font-size: .825rem;
   }
 
+  .nav_brand.w--current {
+    padding-left: 0;
+  }
+
   .hero_content-wrapper {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
