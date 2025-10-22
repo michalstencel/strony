@@ -1617,7 +1617,8 @@ figcaption {
 .features_rive {
   background-color: var(--background-color--bg-alt);
   border-radius: 2rem;
-  width: 100%;
+  width: 730px;
+  height: 486px;
   overflow: hidden;
 }
 
@@ -3571,6 +3572,8 @@ figcaption {
 
   .features_rive {
     border-radius: 1.25rem;
+    width: 30rem;
+    height: 20rem;
   }
 
   .contact_heading {
@@ -3848,8 +3851,11 @@ figcaption {
   }
 
   .features_rive {
+    border-radius: 1rem;
     justify-content: center;
     align-items: flex-start;
+    width: 18rem;
+    height: 12rem;
     display: flex;
   }
 
