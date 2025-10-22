@@ -1616,7 +1616,7 @@ figcaption {
 
 .features_rive {
   background-color: var(--background-color--bg-alt);
-  border-radius: 3rem;
+  border-radius: 2rem;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1626,6 +1626,10 @@ figcaption {
   max-width: 26rem;
   padding-top: 2rem;
   padding-left: 6.25rem;
+}
+
+.features_rive-component.is-desktop {
+  display: none;
 }
 
 .features_content-wrapper {
@@ -3011,6 +3015,10 @@ figcaption {
     display: flex;
   }
 
+  .features_rive-component.is-desktop {
+    display: block;
+  }
+
   .features_content-wrapper {
     justify-content: flex-start;
     align-items: center;
@@ -3294,6 +3302,10 @@ figcaption {
 
   .contact_heading-description {
     font-size: .825rem;
+  }
+
+  .features_rive-code-comp {
+    display: none;
   }
 }
 
