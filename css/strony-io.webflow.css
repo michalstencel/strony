@@ -3012,6 +3012,11 @@ figcaption {
     flex-flow: column;
   }
 
+  .features_rive {
+    width: 100%;
+    height: auto;
+  }
+
   .features_content {
     justify-content: center;
     align-items: flex-start;
@@ -3572,8 +3577,6 @@ figcaption {
 
   .features_rive {
     border-radius: 1.25rem;
-    width: 30rem;
-    height: 20rem;
   }
 
   .contact_heading {
@@ -3854,8 +3857,6 @@ figcaption {
     border-radius: 1rem;
     justify-content: center;
     align-items: flex-start;
-    width: 18rem;
-    height: 12rem;
     display: flex;
   }
 
