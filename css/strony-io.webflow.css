@@ -1860,7 +1860,7 @@ figcaption {
   grid-row-gap: 1rem;
   flex-flow: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
 }
 
@@ -3254,6 +3254,8 @@ figcaption {
   }
 
   .contact_heading {
+    justify-content: flex-start;
+    align-items: center;
     max-width: 70%;
   }
 
